@@ -1,0 +1,8 @@
+1. sunny 
+2. cloudy
+3. rain
+4. snow
+5. night-clear
+6. night-clouds
+7. night-rain
+8. night-snow
