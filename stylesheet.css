@@ -1,0 +1,30 @@
+body{
+	background-color: #1C112D;
+}
+
+.filler{
+	background-color: #1C112D;
+	height: 200px;
+}
+
+.temperature{
+	background-color: #1C112D;
+	font-size:180px;
+	color: #FDFBF1
+}
+
+.gif{
+	text-align: center;
+}
+
+.location{
+	background-color: #1C112D;
+	font-size: 70px;
+	color: #FDFBF1
+}
+
+.status{
+	background-color: #1C112D;
+	font-size: 100px;
+	color: #FDFBF1
+}
