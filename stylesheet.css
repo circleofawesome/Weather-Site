@@ -10,7 +10,8 @@ body{
 .temperature{
 	background-color: #1C112D;
 	font-size:180px;
-	color: #FDFBF1
+	color: #FDFBF1;
+	font-family: 'Lily Script One', cursive;
 }
 
 .gif{
@@ -20,11 +21,31 @@ body{
 .location{
 	background-color: #1C112D;
 	font-size: 70px;
-	color: #FDFBF1
+	color: #FDFBF1;
+	font-family: 'Lily Script One', cursive;
 }
 
 .status{
 	background-color: #1C112D;
 	font-size: 100px;
-	color: #FDFBF1
+	color: #FDFBF1;
+	font-family: 'Lily Script One', cursive;
+}
+
+.buttons{
+	text-align: right;
+	font-family: 'Lily Script One', cursive;
+}
+
+.btn-default{
+	
+	background-color: #F02B65;
+	color:#FDFBF1;
+	border:none;
+	font-family: 'Lily Script One', cursive;
+}
+
+.btn-default:hover{
+	background-color: #f49cc8;
+	font-family: 'Lily Script One', cursive;
 }
