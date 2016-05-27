@@ -1,0 +1,56 @@
+body {
+  background-color: #1C112D;
+}
+
+.filler {
+  background-color: #1C112D;
+  height: 200px;
+  opacity:0;
+}
+
+.temperature {
+  font-size: 190px;
+  color: #FDFBF1;
+  font-family: 'Lily Script One', cursive;
+}
+
+.weather{
+  background:#7f7f7f;
+  background:rgba(0,0,0,0.5);
+  border-radius:4%;
+}
+
+.gif {
+  text-align: center;
+  padding: none;
+}
+
+.location {
+  font-size: 70px;
+  color: #FDFBF1;
+  font-family: 'Lily Script One', cursive;
+}
+
+.status {
+
+  font-size: 100px;
+  color: #FDFBF1;
+  font-family: 'Lily Script One', cursive;
+}
+
+.buttons {
+  text-align: right;
+  font-family: 'Lily Script One', cursive;
+}
+
+.btn-default {
+  background-color: #F02B65;
+  color: #FDFBF1;
+  border: none;
+  font-family: 'Lily Script One', cursive;
+}
+
+.btn-default:hover {
+  background-color: #f49cc8;
+  font-family: 'Lily Script One', cursive;
+}
