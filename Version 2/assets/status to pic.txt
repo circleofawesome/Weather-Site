@@ -1,0 +1,20 @@
+1. sunny https://media.giphy.com/media/3oEjHC0EPatuO8RqRG/giphy.gif
+2. cloudy https://media.giphy.com/media/l41YxkTa54X2NraBG/giphy.gif
+3. rain  https://media.giphy.com/media/3oEjHHBFNmau7mdH32/giphy.gif
+4. snow  https://media.giphy.com/media/3oEjHZ8gUYX13HCewE/giphy.gif
+5. night-clear  https://media.giphy.com/media/3oEjI1D86gVdNfVMis/giphy.gif
+6. night-clouds https://media.giphy.com/media/3oEjHTUHaEF3eTHSeI/giphy.gif
+7. night-rain   https://media.giphy.com/media/26gwpQhcBrXeVKeli/giphy.gif
+8. night-snow   https://media.giphy.com/media/3o6EhX89ABsdUMRaGk/giphy.gif
+
+
+backgrounds:
+1. day clear
+2. day cloudy
+3. day rain
+4. day snow
+
+5. night clear
+6. night cloudy
+7. night rain
+8. night snow 
