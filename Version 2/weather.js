@@ -2,6 +2,26 @@
 
 var zipcode;
 $(document).ready(function() {
+  var icons={
+    "01d": "https://media.giphy.com/media/3oEjHC0EPatuO8RqRG/giphy.gif",
+    "01n": "https://media.giphy.com/media/3oEjI1D86gVdNfVMis/giphy.gif",
+    "02d": "https://media.giphy.com/media/l41YxkTa54X2NraBG/giphy.gif",
+    "02n": "https://media.giphy.com/media/3oEjHTUHaEF3eTHSeI/giphy.gif",
+    "03d": "https://media.giphy.com/media/l41YxkTa54X2NraBG/giphy.gif",
+    "03n": "https://media.giphy.com/media/3oEjHTUHaEF3eTHSeI/giphy.gif",
+    "04d": "https://media.giphy.com/media/l41YxkTa54X2NraBG/giphy.gif",
+    "04n": "https://media.giphy.com/media/3oEjHTUHaEF3eTHSeI/giphy.gif",
+    "09d": "https://media.giphy.com/media/3oEjHHBFNmau7mdH32/giphy.gif",
+    "09n": "https://media.giphy.com/media/26gwpQhcBrXeVKeli/giphy.gif",
+    "10d": "https://media.giphy.com/media/3oEjHHBFNmau7mdH32/giphy.gif",
+    "10n": "https://media.giphy.com/media/26gwpQhcBrXeVKeli/giphy.gif",
+    "11d": "https://media.giphy.com/media/3oEjHHBFNmau7mdH32/giphy.gif",
+    "11n": "https://media.giphy.com/media/26gwpQhcBrXeVKeli/giphy.gif",
+    "13d": "https://media.giphy.com/media/3oEjHZ8gUYX13HCewE/giphy.gif",
+    "13n": "https://media.giphy.com/media/3o6EhX89ABsdUMRaGk/giphy.gif",
+    "50d": "https://media.giphy.com/media/l41YxkTa54X2NraBG/giphy.gif",
+    "50n": "https://media.giphy.com/media/3oEjHTUHaEF3eTHSeI/giphy.gif"
+  }
   var zip;
   var country;
   var city;
@@ -50,6 +70,10 @@ $(document).ready(function() {
   $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempF+"&deg;<span class='unit'>F</span></div>");
   $("div.location").replaceWith("<div class='col-md-12 location'>"+city+", "+country+"</div>");
   $("div.status").replaceWith("<div class='col-md-12 status'>"+condition+"</div>");
+  //<div class="col-md-12 gif"><img src="https://media.giphy.com/media/3oEjHC0EPatuO8RqRG/giphy.gif"></div>
+  $("div.gif").replaceWith("<div class='col-md-12 gif'><img src='"+icons[icon]+"'></div>");
+  //console.log(icons[icon]);
+
   $(".cel").on("click",function(){
     $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempC+"&deg;<span class='unit'>C</span></div>");
   });
