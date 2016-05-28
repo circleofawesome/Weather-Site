@@ -50,4 +50,10 @@ $(document).ready(function() {
   $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempF+"&deg;<span class='unit'>F</span></div>");
   $("div.location").replaceWith("<div class='col-md-12 location'>"+city+", "+country+"</div>");
   $("div.status").replaceWith("<div class='col-md-12 status'>"+condition+"</div>");
+  $(".cel").on("click",function(){
+    $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempC+"&deg;<span class='unit'>C</span></div>");
+  });
+  $(".far").on("click",function(){
+    $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempF+"&deg;<span class='unit'>F</span></div>");
+  });
 });
