@@ -9,7 +9,7 @@
 
 
 backgrounds:
-1. day clear
+1. day clear: 
 2. day cloudy
 3. day rain
 4. day snow
