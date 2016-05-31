@@ -75,9 +75,11 @@ $(document).ready(function() {
 
   if(time>sunrise&&time<sunset){
     //background image=day
+    $("body").css("background-image","url('http://i.cubeupload.com/4JRyUP.jpg')");
   }
   else{
     //background image = night
+    $("body").css("background-image","url('http://i.cubeupload.com/Yexe5P.jpg')");
   }
 
   tempF=k_to_far(temp);
@@ -86,7 +88,7 @@ $(document).ready(function() {
   $("div.location").replaceWith("<div class='col-md-12 location'>"+city+", "+country+"</div>");
   $("div.status").replaceWith("<div class='col-md-12 status'>"+condition+"</div>");
   //<div class="col-md-12 gif"><img src="https://media.giphy.com/media/3oEjHC0EPatuO8RqRG/giphy.gif"></div>
-  $("div.gif").replaceWith("<div class='col-md-12 gif'><img class='img-responsive' src='"+icons[icon]+"'></div>");
+  $("div.gif").replaceWith("<div class='col-md-12 gif'><img class='img-responsive center-block' src='"+icons[icon]+"'></div>");
   //console.log(icons[icon]);
 
   $(".cel").on("click",function(){
