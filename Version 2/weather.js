@@ -30,6 +30,9 @@ $(document).ready(function() {
   var icon;
   var tempF;
   var tempC;
+  var time;
+  var sunrise;
+  var sunset;
 
   function k_to_cel(k){
     var cel=k-273;
@@ -48,6 +51,7 @@ $(document).ready(function() {
     dataType: 'JSON',
     success: function(data) {
       zip = data.zip_code;
+      console.log(zip);
     }
   });
 
@@ -63,15 +67,26 @@ $(document).ready(function() {
       temp = data.main.temp;
       condition = data.weather[0].main;
       icon=data.weather[0].icon;
+      time=data.dt;
+      sunrise=data.sys.sunrise;
+      sunset=data.sys.sunset;
     }
   });
+
+  if(time>sunrise&&time<sunset){
+    //background image=day
+  }
+  else{
+    //background image = night
+  }
+
   tempF=k_to_far(temp);
   tempC=k_to_cel(temp);
   $("div.temperature").replaceWith("<div class='col-md-12 temperature'>"+tempF+"&deg;<span class='unit'>F</span></div>");
   $("div.location").replaceWith("<div class='col-md-12 location'>"+city+", "+country+"</div>");
   $("div.status").replaceWith("<div class='col-md-12 status'>"+condition+"</div>");
   //<div class="col-md-12 gif"><img src="https://media.giphy.com/media/3oEjHC0EPatuO8RqRG/giphy.gif"></div>
-  $("div.gif").replaceWith("<div class='col-md-12 gif'><img src='"+icons[icon]+"'></div>");
+  $("div.gif").replaceWith("<div class='col-md-12 gif'><img class='img-responsive' src='"+icons[icon]+"'></div>");
   //console.log(icons[icon]);
 
   $(".cel").on("click",function(){

@@ -9,12 +9,7 @@
 
 
 backgrounds:
-1. day clear
-2. day cloudy
-3. day rain
-4. day snow
 
-5. night clear
-6. night cloudy
-7. night rain
-8. night snow 
+day: http://i.cubeupload.com/4JRyUP.jpg
+
+night: http://i.cubeupload.com/Yexe5P.jpg
